@@ -41,6 +41,7 @@ const uglify 				= require('gulp-uglify');
 const libsJs 		= [
 	'bower_components/jquery/dist/jquery.min.js',
 	'bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+	'bower_components/owl.carousel/dist/owl.carousel.min.js',
 	'source/libs/*.js'
 ];
 
@@ -338,7 +339,7 @@ gulp.task('server', connect.server({
 	port: 9000,
 	livereload: true,
 	open: {
-		browser: 'safari' // Para o Google chrome no linux - google-chrome-stable
+		browser: 'google-chrome-stable' // Para o Google chrome no linux - google-chrome-stable
 	}
 }));
 
